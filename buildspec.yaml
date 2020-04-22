@@ -13,6 +13,7 @@ phases:
       - echo $CODEBUILD_SOURCE_VERSION
       - echo $CODEBUILD_WEBHOOK_TRIGGER
       - echo $CODEBUILD_WEBHOOK_BASE_REF
+      - git branch
 
   post_build:
     commands:
