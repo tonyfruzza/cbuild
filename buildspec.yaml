@@ -10,7 +10,6 @@ phases:
 
   build:
     commands:
-      - w
       - ls -l
 
   post_build:
