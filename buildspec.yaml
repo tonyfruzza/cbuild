@@ -10,7 +10,6 @@ phases:
 
   build:
     commands:
-      # - terraform $TF_COMMAND -auto-approve
       - ls -l
 
   post_build:
