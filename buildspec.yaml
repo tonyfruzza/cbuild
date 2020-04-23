@@ -10,10 +10,11 @@ phases:
 
   build:
     commands:
-      - w
-      - ls -l
+      - echo $CODEBUILD_SOURCE_VERSION
+      - echo $CODEBUILD_WEBHOOK_TRIGGER
+      - which git
+      - git branch
 
   post_build:
     commands:
-      # - echo terraform $TF_COMMAND completed on `date`
       - uptime
